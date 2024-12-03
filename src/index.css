@@ -1,0 +1,123 @@
+/* Corpo da página */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(248, 155, 223);
+  background: linear-gradient(90deg, rgba(248, 155, 223, 1) 0%, rgba(227, 150, 255, 1) 50%, rgba(194, 240, 241, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garantir que a altura da página ocupe toda a tela */
+}
+
+/* Estilo para a aplicação, centralizando o conteúdo */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* Limita a largura para que o conteúdo não fique muito largo */
+  text-align: center;
+}
+
+/* Botões com estilo comum */
+.bttn1, .bttn2 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;  /* Aumentado o tamanho da fonte */
+  font-weight: 600;  /* Deixando o texto mais em negrito */
+  height: 50px;  /* Aumentado a altura dos botões */
+  line-height: 24px;  /* Aumentado o espaçamento entre as linhas */
+  padding: 14px 20px;  /* Aumentado o padding para um botão mais largo */
+  text-align: center;
+  transition: background-color 100ms;
+  width: 270px; /* Ajustar largura dos botões */
+  margin: 12px 0; /* Aumentado o espaço entre os botões */
+}
+
+.bttn1:hover,
+.bttn1:focus,
+.bttn2:hover,
+.bttn2:focus {
+  background-color: #F082AC;
+}
+
+/* Inputs de texto com estilo */
+input[type="text"] {
+  padding: 14px;  /* Aumentado o padding do input */
+  margin: 12px 0;  /* Aumentado o espaçamento entre inputs e botões */
+  font-size: 18px;  /* Aumentado o tamanho da fonte */
+  width: 100%;
+  max-width: 270px; /* Limita a largura do input */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Para centralizar tudo no meio da tela */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;  /* Aumentado o tamanho do título */
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilo para a lista de registros (ul) */
+ul {
+  list-style: none; /* Remove os pontos das listas */
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+}
+
+li {
+  background-color: #ffffff;
+  padding: 18px;  /* Aumentado o padding */
+  margin: 12px 0;  /* Aumentado o espaçamento entre os itens */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1); /* Aumentado a sombra para maior profundidade */
+  font-size: 18px;  /* Aumentado o tamanho da fonte */
+  color: #333;
+  display: flex;
+  justify-content: space-between; /* Alinha os dados e botões no final da linha */
+  align-items: center;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+  cursor: pointer; /* Altera o cursor ao passar o mouse para sugerir ação */
+}
+
+li span {
+  font-weight: bold; /* Coloca o nome em negrito */
+}
+
+li button {
+  background-color: #F082AC;
+  border-radius: 8px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;  /* Aumentado o tamanho da fonte dos botões */
+  padding: 8px 14px;  /* Aumentado o padding */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #EA4C89;
+}
